@@ -36,9 +36,12 @@ a {
 }
 
 .btn-buy-now {
-  background-color: var(--color-dark);
   color: rgba(251, 251, 251, 1);
+  font-size: 32px;
+  font-weight: 700;
+  background-color: var(--color-dark);
   border: none;
   border-radius: 60px;
-  padding: 16px 56px;
+  padding: 16px;
+  width: 100%;
 }
