@@ -34,3 +34,11 @@ a {
   color: var(--color-dark);
   box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px;
 }
+
+.btn-buy-now {
+  background-color: var(--color-dark);
+  color: rgba(251, 251, 251, 1);
+  border: none;
+  border-radius: 60px;
+  padding: 16px 56px;
+}

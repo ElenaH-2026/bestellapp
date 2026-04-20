@@ -1,14 +1,14 @@
 :root {
     --color-white: rgba(255, 255, 255, 1);
-      /*-> für Überschriftrn und Preiskalkulation */
+      /*-> für Kategorien und Header, Footer */
     --color-dark: rgba(231, 108, 31, 1);
     --color-stars: rgba(250, 202, 172, 1);
     --color-medium: rgba(231, 195, 173, 1);
       /*-> für Scroll Balken */
     --color-light: rgba(253, 234, 220, 1);
-      /*-> für Karten-Hintergrund und Basket-Text */
+      /*-> für Karten-Hintergrund und Basket-Überschrift */
     --color-second: rgba(54, 53, 52, 1);
-      /*-> für Basket-Hintergrund und Basket-Text */
+      /*-> für Basket-Hintergrund und dunkler Text */
 }
 
 * {
