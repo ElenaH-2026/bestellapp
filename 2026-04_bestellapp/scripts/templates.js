@@ -25,13 +25,21 @@ function templateDishContainer(indexDish, name, imageFilename, description, pric
         </div>`
 }
 
-function templateDishCartInBasket(name, amount, basketPrice) {
+function templateDishCartInBasket(indexDish, name, amount, basketPrice) {
     return `
         <div class="choosen-dish-card">
             <p class="font-22px-700">${amount} x ${name}</p>
             <div class="amount-price-container">
                 <p class="font-24px-600">
-                    <span onclick="">-</span><span> ${amount} </span><span onclick="">+</span>
+                    <button onclick="deleteFromBasket(${indexDish})"
+                        class="btn-minus-plus font-24px-600">
+                        -
+                    </button>
+                    <span> ${amount} </span>
+                    <button onclick="addToBasket(${indexDish})"
+                        class="btn-minus-plus font-24px-600">
+                        +
+                    </button>
                 </p>
                 <p class="font-22px-700">${basketPrice}</p>
             </div>

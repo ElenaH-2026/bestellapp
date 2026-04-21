@@ -5,7 +5,7 @@ const allDishes = [
         "imageFilename": "b-veggie-mushroom-black-burger.jpg",
         "description": "Mixed green salad, Tomatoes, Edamame, Mushrooms",
         "price": 16.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Burger",
@@ -13,7 +13,7 @@ const allDishes = [
         "imageFilename": "b-all-meat-burger.jpg",
         "description": "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
         "price": 15.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Burger",
@@ -21,7 +21,7 @@ const allDishes = [
         "imageFilename": "b-beef-red-burger.jpg",
         "description": "Beef, Cheese, Tomatoes, Lettuce, Onion",
         "price": 14.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Burger",
@@ -29,7 +29,7 @@ const allDishes = [
         "imageFilename": "b-blg-chicken-burger.jpg",
         "description": "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
         "price": 15.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Pizza",
@@ -37,7 +37,7 @@ const allDishes = [
         "imageFilename": "p-pizza-margherita.jpg",
         "description": "Tomato Sauce, Mozzarella",
         "price": 11.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Pizza",
@@ -45,7 +45,7 @@ const allDishes = [
         "imageFilename": "p-pizza-chorizo.jpg",
         "description": "Tomato slices, Mozzarella, Chorizo",
         "price": 13.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Pizza",
@@ -53,7 +53,7 @@ const allDishes = [
         "imageFilename": "p-funghi.jpg",
         "description": "Red onion, Olives, Button Mushrooms, Mozzarella",
         "price": 12.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Pizza",
@@ -61,7 +61,7 @@ const allDishes = [
         "imageFilename": "p-quattro-formaggi-with-chicken.jpg",
         "description": "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
         "price": 15.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Salad",
@@ -69,7 +69,7 @@ const allDishes = [
         "imageFilename": "s-warm-beef-arugula-salad.jpg",
         "description": "Beef, Arugula, Field salad, Greek feta, Cherry tomatoes, Sun-dried Tomatoes, Balsamic-vinegar dressing",
         "price": 16.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Salad",
@@ -77,7 +77,7 @@ const allDishes = [
         "imageFilename": "s-mini-green-salad.jpg",
         "description": "Green salad, Cucumber, Carrots, Parsley, Radishes ",
         "price": 7.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Salad",
@@ -85,7 +85,7 @@ const allDishes = [
         "imageFilename": "s-green-salad-with-sea-food.jpg",
         "description": "Mixed greens, Cherry tomatoes, Red onion, Mussels, Squid rings, Shrimp, Dijon mustard-lemon dressing with dill",
         "price": 16.9,
-        "amount": 0,
+        // "amount": 0,
     },
     {
         "category": "Salad",
@@ -93,6 +93,6 @@ const allDishes = [
         "imageFilename": "s-vegan-green-salad-with-tofu.jpg",
         "description": "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
         "price": 14.9,
-        "amount": 0,
+        // "amount": 0,
     }
 ]
