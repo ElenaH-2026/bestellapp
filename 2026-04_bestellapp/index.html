@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/basket.css">
 </head>
-<body>
+<body onload="init()">
     <header class="wrapper">
         <div class="header-container">
             <img class="header-logo"
@@ -48,51 +48,39 @@
             </div>
         </section>
 
-        <section id="#BurgerSection">
+        <section id="#SectionBurger">
             <div class="category-seperator wrapper">
                     <img class="category-icon burger-icon"
                         src="./assets/icons/burger.png" 
                         alt="Burger">
                     <h2>Burger</h2>
             </div>
-            <div id="#BurgerContainer"
+            <div id="#ContainerBurger"
                 class="category-container wrapper">
-                <div class="dish-container">
-                    <img class="dish-img"
-                        src="./assets/img/b-veggie-mushroom-black-burger.jpg" 
-                        alt="">
-                    <div class="name-and-description-container">
-                        <p class="font-24px-600">Name</p>
-                        <p class="font-16px-500">Beschreibung</p>
-                    </div>
-                    <div class="price-and-add-container">
-                        <p class="dish-name-and-price">x,xx €</p>
-                        <button class="btn-add-to-basket">Add to basket</button>
-                    </div>
-                </div>
+                
             </div>
         </section>
 
-        <section id="#PizzaSection">
+        <section id="#SectionPizza">
             <div class="category-seperator wrapper">
                     <img class="category-icon"
                         src="./assets/icons/pizza.png" 
                         alt="Pizza">
                     <h2>Pizza <span>(30 cm)</span></h2>
             </div>
-            <div id="#PizzaContainer"
+            <div id="#ContainerPizza"
                 class="category-container wrapper">
             </div>
         </section>
 
-        <section id="#SaladSection">
+        <section id="#SectionSalad">
             <div class="category-seperator wrapper">
                     <img class="category-icon"
                         src="./assets/icons/salad.png" 
                         alt="Salat">
                     <h2>Salat</h2>
             </div>
-            <div id="#SaladContainer"
+            <div id="#ContainerSalad"
                 class="category-container wrapper">
             </div>
         </section>
@@ -105,54 +93,11 @@
                     src="./assets/icons/shopping_cart_big.svg" 
                     alt="Einkaufswagen-Icon">
             </div>
-            <div class="basket">
+            <div class="basket position-fixed">
                 <h3>Your Basket</h3>
-                <div class="choosen-dishes-container">
-                    <div class="choosen-dish-card">
-                        <p class="font-22px-700">1 x Gericht<br>2. Zeile</p>
-                        <div class="amount-price-container">
-                            <p class="font-24px-600">
-                                <span>-</span><span>1</span><span>+</span>
-                            </p>
-                            <p class="font-22px-700">xx,xx€</p>
-                        </div>
-                    </div>
-                    <div class="choosen-dish-card">
-                        <p class="font-22px-700">1 x Gericht</p>
-                        <div class="amount-price-container">
-                            <p class="font-24px-600">
-                                <span>-</span><span>1</span><span>+</span>
-                            </p>
-                            <p class="font-22px-700">xx,xx€</p>
-                        </div>
-                    </div>
-                    <div class="choosen-dish-card">
-                        <p class="font-22px-700">1 x Gericht<br>2. Zeile</p>
-                        <div class="amount-price-container">
-                            <p class="font-24px-600">
-                                <span>-</span><span>1</span><span>+</span>
-                            </p>
-                            <p class="font-22px-700">xx,xx€</p>
-                        </div>
-                    </div>
-                    <div class="choosen-dish-card">
-                        <p class="font-22px-700">1 x Gericht<br>2. Zeile</p>
-                        <div class="amount-price-container">
-                            <p class="font-24px-600">
-                                <span>-</span><span>1</span><span>+</span>
-                            </p>
-                            <p class="font-22px-700">xx,xx€</p>
-                        </div>
-                    </div>
-                    <div class="choosen-dish-card">
-                        <p class="font-22px-700">1 x Gericht<br>2. Zeile</p>
-                        <div class="amount-price-container">
-                            <p class="font-24px-600">
-                                <span>-</span><span>1</span><span>+</span>
-                            </p>
-                            <p class="font-22px-700">xx,xx€</p>
-                        </div>
-                    </div>
+                <div id="#ContainerChoosenDishes"
+                    class="choosen-dishes-container">
+                    
                 </div>
                 <div class="money-calculation">
                     <table>

@@ -1,6 +1,6 @@
 const allDishes = [
     {
-        "category": "Burger & Sandwiches",
+        "category": "Burger",
         "name": "Veggie mushroom black burger",
         "imageFilename": "b-veggie-mushroom-black-burger.jpg",
         "description": "Mixed green salad, Tomatoes, Edamame, Mushrooms",
@@ -8,7 +8,7 @@ const allDishes = [
         "amount": 0,
     },
     {
-        "category": "Burger & Sandwiches",
+        "category": "Burger",
         "name": "All meat burger",
         "imageFilename": "b-all-meat-burger.jpg",
         "description": "Beef, Bacon, Dill pickles, Smoked cheese, Ketchup, BBQ souse",
@@ -16,7 +16,7 @@ const allDishes = [
         "amount": 0,
     },
     {
-        "category": "Burger & Sandwiches",
+        "category": "Burger",
         "name": "Beef red burger",
         "imageFilename": "b-beef-red-burger.jpg",
         "description": "Beef, Cheese, Tomatoes, Lettuce, Onion",
@@ -24,10 +24,10 @@ const allDishes = [
         "amount": 0,
     },
     {
-        "category": "Burger & Sandwiches",
+        "category": "Burger",
         "name": "Blg chicken burger",
         "imageFilename": "b-blg-chicken-burger.jpg",
-        "description": "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper, ",
+        "description": "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
         "price": 15.9,
         "amount": 0,
     },
