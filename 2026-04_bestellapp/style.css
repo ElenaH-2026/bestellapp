@@ -4,7 +4,7 @@
   padding: 0 calc((100% - 1440px) / 2);
 }
 
-.wrapper-margin {
+/* .wrapper-margin {
   margin-left: calc((100% - 1440px) / 2);
   margin-right: calc((100% - 1440px) / 2);
 }
@@ -15,7 +15,7 @@
 
 .wrapper-right {
   margin-right: calc((100vw - 1440px) / 2);
-}
+} */
 
 /* text-styling */
 
@@ -211,6 +211,7 @@ header {
 
 .category-seperator {
   background-color: var(--color-dark);
+  box-sizing: content-box;
   /* margin-left: calc((-100vw + 1440px) / 2);
   margin-right: calc((-100vw + 1440px - (2 * 440px)) / 2); */
   /* margin-left: min(0px, calc((-100vw + 1440px) / 2));
