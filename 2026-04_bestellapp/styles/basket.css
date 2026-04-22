@@ -1,7 +1,6 @@
-.position-fixed {
-    position: fixed;
-    top: 200px;
-    right: 0;
+.position-sticky {
+    position: sticky;
+    top: 120px;
 }
 
 .basket {

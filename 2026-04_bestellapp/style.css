@@ -4,6 +4,19 @@
   padding: 0 calc((100% - 1440px) / 2);
 }
 
+.wrapper-margin {
+  margin-left: calc((100% - 1440px) / 2);
+  margin-right: calc((100% - 1440px) / 2);
+}
+
+.wrapper-left {
+  margin-left: calc((100vw - 1440px) / 2);
+}
+
+.wrapper-right {
+  margin-right: calc((100vw - 1440px) / 2);
+}
+
 /* text-styling */
 
 * {
@@ -112,8 +125,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 120px;
-  margin-right: 40px;
+  padding: 0 40px;
   height: 120px;
 }
 
@@ -192,12 +204,26 @@ header {
 
 /* dishes-section */
 
+.dishes-and-basket-section {
+  display: flex;
+  justify-content: space-between;
+}
+
 .category-seperator {
   background-color: var(--color-dark);
+  /* margin-left: calc((-100vw + 1440px) / 2);
+  margin-right: calc((-100vw + 1440px - (2 * 440px)) / 2); */
+  /* margin-left: min(0px, calc((-100vw + 1440px) / 2));
+  margin-right: min(0px, calc((-100vw + 1440px - (2 * 440px)) / 2)); */
+}
+
+.h2-container {
+  
   display: flex;
   align-items: center;
   gap: 40px;
   height: 60px;
+  /* margin-left: calc((100vw - 1440px) / 2); */
 }
 
 .category-icon {
@@ -220,11 +246,10 @@ header {
 .dish-container {
   background-color: var(--color-light);
   display: flex;
-  margin-left: 120px;
+  margin: 0 120px;
   border-radius: 12px;
   padding: 12px;
   gap: 16px;
-  width: 50%;
 }
 
 .dish-img {
