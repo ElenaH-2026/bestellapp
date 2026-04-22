@@ -1,5 +1,13 @@
-.position-fixed {
-    position: fixed;
+.position-absolut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.position-sticky {
+    position: sticky;
     top: 200px;
     right: 0;
 }
