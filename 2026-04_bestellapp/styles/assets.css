@@ -46,6 +46,7 @@ a {
   color: rgba(251, 251, 251, 1);
   font-size: 32px;
   font-weight: 700;
+  text-wrap: balance;
   background-color: var(--color-dark);
   border: none;
   border-radius: 60px;

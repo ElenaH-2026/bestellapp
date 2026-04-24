@@ -1,21 +1,3 @@
-const allCategories = [
-    {
-        "category": "Burger",
-        "optionalSpan": "",
-        "categoryImg": "burger.png",
-    },
-    {
-        "category": "Pizza",
-        "optionalSpan": "(30 cm)",
-        "categoryImg": "pizza.png",
-    },
-    {
-        "category": "Salad",
-        "optionalSpan": "",
-        "categoryImg": "salad.png",
-    },
-];
-
 const allDishes = [
     {
         "category": "Burger",
