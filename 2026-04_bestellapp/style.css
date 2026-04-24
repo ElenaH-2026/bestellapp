@@ -197,11 +197,24 @@ header {
 }
 
 .category-seperator {
+  position: absolute;
+  left: 0;
   background-color: var(--color-dark);
   display: flex;
   align-items: center;
   gap: 40px;
+  width: 100%;
   height: 60px;
+}
+
+#SectionBurger > .category-seperator {
+    top: 820px;
+}
+#SectionPizza > .category-seperator {
+    top: 1020px;
+}
+#SectionSalad > .category-seperator {
+    top: 1220px;
 }
 
 .category-icon {
@@ -216,7 +229,7 @@ header {
 .category-container {
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
+  padding-top: 92px;
   padding-bottom: 120px;
   gap: 16px;  
 }
