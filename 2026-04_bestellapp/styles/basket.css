@@ -13,7 +13,7 @@
     padding: 60px 40px;
     gap: 32px;
     width: 440px;
-    height: 750px;
+    height: min(750px, calc(100vh - 80px));
 }
 
 .p-empty-basket {
@@ -78,16 +78,26 @@ th {
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1279px) {
+    .position-sticky {
+        top: 80px;
+    }
+
     .basket {
         padding: 50px 30px;
         width: 400px;
     }
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1000px){
     .basket {
         padding: 40px 20px;
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px){
+  .basket {
+        display: none;
     }
 }
