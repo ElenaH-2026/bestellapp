@@ -1,7 +1,14 @@
 const dishesInBasket = {"dishes":[], "amounts":[]};
+const DIALOG_REF_BASKET = document.getElementById('#BasketDialog');
 
 function init() {
-    renderAllDishContainer()
+    renderAllDishContainer();
+    renderEmptyBasket();
+    document.getElementById('#BasketDialog').showModal();
+}
+
+function renderEmptyBasket() {
+    document.getElementById('#Basket').innerHTML = templateEmptyBasket();
 }
 
 function renderAllDishContainer() {
