@@ -49,7 +49,7 @@
         </section>
 
         <section class="dishes-and-basket-section wrapper">
-            <section>
+            <section id="#DishesSection">
                 <section id="SectionBurger">
                     <div class="category-seperator"></div>
                     <div class="h2-container">
@@ -96,7 +96,7 @@
 
         </section>
 
-        <dialog id="#BasketDialog">
+        <dialog id="#BasketDialog" closedby="any">
         </dialog>
 
     </main>
@@ -115,60 +115,25 @@
             <a href="##HeroSection">
                 <img class=""
                     src="./assets/icons/home-white.svg" 
-                    alt="xxx">
+                    alt="zum Seitenanfang">
             </a>
             <a href="#">
                 <img class=""
                     src="./assets/icons/home-white.svg" 
-                    alt="xxx">
+                    alt="zum persönlichen Profil">
             </a>
-            <a href="##HeroSection">
+            <a href="##DishesSection">
+                <img class=""
+                    src="./assets/icons/logo-symbol.svg" 
+                    alt="zu den Gerichten">
+            </a>
+            <a href="#" onclick="showBasketOverlay()">
                 <img class=""
                     src="./assets/icons/home-white.svg" 
-                    alt="xxx">
-            </a>
-            <a href="#">
-                <img class=""
-                    src="./assets/icons/home-white.svg" 
-                    alt="xxx">
+                    alt="Warenkorb anzeigen">
             </a>
         </div>
     </footer>
 </body>
 
 </html>
-
-<!-- <div class="basket">
-    <h3>Your Basket</h3>
-    <p class="p-empty-basket">Nothing here yet.<br>Go ahead and choose something delicious!</p>
-    <img class=""
-        src="./assets/icons/shopping_cart_big.svg" 
-        alt="Einkaufswagen-Icon">
-</div>
-<div class="basket">
-    <h3>Your Basket</h3>
-    <div id="#ContainerChoosenDishes"
-        class="choosen-dishes-container">
-        
-    </div>
-    <div class="money-calculation">
-        <table>
-            <tr class="font-20px-600">
-                <td>Subtotal</td>
-                <td id="#Subtotal"></td>
-            </tr>
-            <tr class="font-20px-600">
-                <td>Delivery fee</td>
-                <td id="#DeliveryFee"></td>
-            </tr>
-            <tr class="font-22px-700">
-                <th>Total </th>
-                <th id="#Total"></th>
-            </tr>
-
-        </table>
-        <button id="#BuyNow"
-            class="btn-buy-now">
-        </button>  
-    </div>
-</div> -->

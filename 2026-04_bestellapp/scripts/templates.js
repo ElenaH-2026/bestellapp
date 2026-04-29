@@ -15,11 +15,11 @@ function templateEmptyBasket() {
         </div>`
 }
 
-function templateFilledBasket() {
+function templateFilledBasket(position) {
     return `
         <div class="basket">
             <h3>Your Basket</h3>
-            <div id="#ContainerChoosenDishes"
+            <div id="#ContainerChoosenDishes${position}"
                 class="choosen-dishes-container">
                 
             </div>
@@ -27,19 +27,19 @@ function templateFilledBasket() {
                 <table>
                     <tr class="font-20px-600">
                         <td>Subtotal</td>
-                        <td id="#Subtotal"></td>
+                        <td id="#Subtotal${position}"></td>
                     </tr>
                     <tr class="font-20px-600">
                         <td>Delivery fee</td>
-                        <td id="#DeliveryFee"></td>
+                        <td id="#DeliveryFee${position}"></td>
                     </tr>
                     <tr class="font-22px-700">
                         <th>Total </th>
-                        <th id="#Total"></th>
+                        <th id="#Total${position}"></th>
                     </tr>
 
                 </table>
-                <button id="#BuyNow"
+                <button id="#BuyNow${position}"
                     class="btn-buy-now">
                 </button>  
             </div>

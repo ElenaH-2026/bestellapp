@@ -3,8 +3,7 @@ const DIALOG_REF_BASKET = document.getElementById('#BasketDialog');
 
 function init() {
     renderAllDishContainer();
-    renderBasket();
-    document.getElementById('#BasketDialog').showModal();
+    renderEmptyBasket();
 }
 
 function renderAllDishContainer() {
@@ -22,7 +21,7 @@ function renderAllDishContainer() {
 }
 
 function renderBasket() {
-    (dishesInBasket.dishes > 0) ? renderFilledBasket() : renderEmptyBasket();
+    (dishesInBasket.dishes.length > 0) ? renderFilledBasket() : renderEmptyBasket();
 }
 
 function renderEmptyBasket() {
@@ -31,14 +30,14 @@ function renderEmptyBasket() {
 }
 
 function renderFilledBasket() {
-    document.getElementById('#BasketAside').innerHTML = templateFilledBasket();
-    document.getElementById('#BasketDialog').innerHTML = templateFilledBasket();
+    document.getElementById('#BasketAside').innerHTML = templateFilledBasket('Aside');
+    document.getElementById('#BasketDialog').innerHTML = templateFilledBasket('Dialog');
 
 }
 
-function renderDishesInBasket(indexDish) {
+function renderDishesInBasket(position) {
     let subtotal = 0;
-    const choosenDishesRef = document.getElementById('#ContainerChoosenDishes');
+    const choosenDishesRef = document.getElementById(`#ContainerChoosenDishes${position}`);
     choosenDishesRef.innerHTML = "";
     for (let indexBasket = 0; indexBasket < dishesInBasket.dishes.length; indexBasket++) {
         const indexDish = dishesInBasket.dishes[indexBasket];
@@ -50,17 +49,17 @@ function renderDishesInBasket(indexDish) {
         choosenDishesRef.innerHTML += templateDishCartInBasket(indexDish, name, amount, basketPrice.toFixed(2).toString().replace(".", ",") + " €");
     }
 
-    renderMoneyCalculation(subtotal);
+    renderMoneyCalculation(position, subtotal);
 }
 
-function renderMoneyCalculation(subtotal) {
+function renderMoneyCalculation(position, subtotal) {
     const deliveryFee = 4.99;
     const total = (subtotal + deliveryFee).toFixed(2).toString().replace(".", ",") + " €";
 
-    document.getElementById('#Subtotal').innerHTML = subtotal.toFixed(2).toString().replace(".", ",") + " €";
-    document.getElementById('#DeliveryFee').innerHTML = deliveryFee.toFixed(2).toString().replace(".", ",") + " €";
-    document.getElementById('#Total').innerHTML = total;
-    document.getElementById('#BuyNow').innerHTML = `Buy now (${total})`
+    document.getElementById(`#Subtotal${position}`).innerHTML = subtotal.toFixed(2).toString().replace(".", ",") + " €";
+    document.getElementById(`#DeliveryFee${position}`).innerHTML = deliveryFee.toFixed(2).toString().replace(".", ",") + " €";
+    document.getElementById(`#Total${position}`).innerHTML = total;
+    document.getElementById(`#BuyNow${position}`).innerHTML = `Buy now (${total})`
 }
 
 function addToBasket(indexDish) {
@@ -73,7 +72,8 @@ function addToBasket(indexDish) {
     }
 
     renderFilledBasket();
-    renderDishesInBasket(indexDish);
+    renderDishesInBasket('Aside');
+    renderDishesInBasket('Dialog');
 }
 
 function deleteFromBasket(indexDish) {
@@ -87,5 +87,13 @@ function deleteFromBasket(indexDish) {
     }
     
     renderBasket();
-    renderDishesInBasket(indexDish);
+    renderDishesInBasket('Aside');
+    renderDishesInBasket('Dialog');
+}
+
+function showBasketOverlay() {
+    document.getElementById('#BasketDialog').showModal();
+    renderBasket();
+    renderDishesInBasket('Aside');
+    renderDishesInBasket('Dialog');
 }
