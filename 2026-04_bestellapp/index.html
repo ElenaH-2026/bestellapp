@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/basket.css">
 </head>
-<body onload="init()">
+<body id="#Start" onload="init()">
     <header class="wrapper">
         <div class="header-container">
             <img class="header-logo"
@@ -27,10 +27,10 @@
                 alt="Navigationsmenü">
         </div>
     </header>
-    <main>
+    <main >
         <section id="#HeroSection" class="wrapper">
             <div class="hero-image"></div>
-            <img class="hero-logo"
+            <img id="#HeroLogo" class="hero-logo"
                 src="./assets/icons/logo-BurgerHouse.png" 
                 alt="BurgerHouse">
             <div class="hero-text">
@@ -102,32 +102,32 @@
     </main>
     <footer class="wrapper font-18px-400">
         <div class="footer-container">
-            <a href="##HeroSection">
+            <a>
                 <img class="copyright-symbol"
                     src="./assets/icons/copyright.svg" 
                     alt="Copyright">
                 2025 BurgerHouse
             </a>
-            <a href="#">Imprint</a>
-            <a href="#">Cookie Preferences</a>
+            <a>Imprint</a>
+            <a>Cookie Preferences</a>
         </div>
         <div class="footer-nav-bar">
-            <a href="##HeroSection">
+            <a href="##Start">
                 <img class=""
                     src="./assets/icons/home-white.svg" 
                     alt="zum Seitenanfang">
             </a>
-            <a href="#">
+            <a>
                 <img class=""
                     src="./assets/icons/home-white.svg" 
                     alt="zum persönlichen Profil">
             </a>
-            <a href="##DishesSection">
+            <a href="##HeroLogo">
                 <img class=""
                     src="./assets/icons/logo-symbol.svg" 
                     alt="zu den Gerichten">
             </a>
-            <a href="#" onclick="showBasketOverlay()">
+            <a onclick="showBasketOverlay()">
                 <img class=""
                     src="./assets/icons/home-white.svg" 
                     alt="Warenkorb anzeigen">

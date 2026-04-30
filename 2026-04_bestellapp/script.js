@@ -21,7 +21,7 @@ function renderAllDishContainer() {
 }
 
 function renderBasket() {
-    (dishesInBasket.dishes.length > 0) ? renderFilledBasket() : renderEmptyBasket();
+    (dishesInBasket.dishes.length == 0) ? renderEmptyBasket() : renderFilledBasket();
 }
 
 function renderEmptyBasket() {
@@ -32,6 +32,8 @@ function renderEmptyBasket() {
 function renderFilledBasket() {
     document.getElementById('#BasketAside').innerHTML = templateFilledBasket('Aside');
     document.getElementById('#BasketDialog').innerHTML = templateFilledBasket('Dialog');
+    renderDishesInBasket('Aside');
+    renderDishesInBasket('Dialog');
 
 }
 
@@ -71,9 +73,8 @@ function addToBasket(indexDish) {
         dishesInBasket.amounts[i] += 1;
     }
 
+    changeAddButton(indexDish);
     renderFilledBasket();
-    renderDishesInBasket('Aside');
-    renderDishesInBasket('Dialog');
 }
 
 function deleteFromBasket(indexDish) {
@@ -86,14 +87,25 @@ function deleteFromBasket(indexDish) {
         dishesInBasket.amounts[i] -= 1;
     }
     
+    changeAddButton(indexDish);
     renderBasket();
-    renderDishesInBasket('Aside');
-    renderDishesInBasket('Dialog');
+}
+
+function changeAddButton(indexDish) {
+    const addButtonRef = document.getElementById(`#ButtonAddToBasket${indexDish}`);
+    if (dishesInBasket.dishes.includes(indexDish)) {
+        const i = dishesInBasket.dishes.indexOf(indexDish);
+        const amount = dishesInBasket.amounts[i];
+
+        addButtonRef.innerHTML = `Added ${amount}`;
+        addButtonRef.classList.add("btn-added-to-basket");
+    } else {
+        addButtonRef.innerHTML = `Add to basket`;
+        addButtonRef.classList.remove("btn-added-to-basket");
+    }
 }
 
 function showBasketOverlay() {
     document.getElementById('#BasketDialog').showModal();
     renderBasket();
-    renderDishesInBasket('Aside');
-    renderDishesInBasket('Dialog');
 }
