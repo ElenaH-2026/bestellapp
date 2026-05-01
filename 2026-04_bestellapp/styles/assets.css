@@ -1,33 +1,52 @@
 /* Links und Buttons */
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 a {
   color: var(--color-white);
   text-decoration: none;
   cursor: pointer;
 }
 
-.svg {
-  fill: gray;
-  /* width: 24px; */
+.footer-nav-bar-svg {
+  box-sizing: content-box;
+  fill: var(--color-white);
+  padding: 4px;
   height: 24px;
-
 }
 
-/* button {
-  background-color: black;
-  border: none;
-  padding: 4px;
-} */
+.footer-nav-bar-svg:hover {
+  background-color: var(--color-white);
+  fill: var(--color-dark);
+  border-radius: 6px;
+}
+
+.dishes-added-to-basket {
+  fill: var(--color-dark);
+}
+
+.circle-amount-dishes {
+  position: absolute;
+  bottom: 32px;
+  right: 24px;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
 
 .btn-add-to-basket {
   color: var(--color-second);
   font-size: 16px;
   font-weight: 600;
   background-color: var(--color-white);
-  border: none;
   border-radius: 20px;
   padding: 5px 8px;
-  cursor: pointer;
 }
 
 .btn-add-to-basket:hover {
@@ -42,9 +61,7 @@ a {
 .btn-minus-plus {
   color: var(--color-second);
   background-color: var(--color-light);
-  border: none;
   padding: 0;
-  cursor: pointer;
 }
 
 .btn-buy-now {
@@ -53,14 +70,22 @@ a {
   font-weight: 700;
   text-wrap: balance;
   background-color: var(--color-dark);
-  border: none;
   border-radius: 60px;
   padding: 16px;
   width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-  .btn-buy-now{
+  .btn-buy-now {
     font-size: 24px;
   } 
 }
+
+@media screen and (max-width: 480px) {
+  .circle-amount-dishes {
+    right: 16px;
+  } 
+}
+
+
+

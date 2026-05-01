@@ -45,9 +45,10 @@ aside > .basket {
     padding: 20px;
 }
 
-.amount-price-container {
+.choosen-dish-card-child-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .money-calculation {

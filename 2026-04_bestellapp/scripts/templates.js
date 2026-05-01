@@ -67,10 +67,18 @@ function templateFilledBasket(position) {
 function templateDishCartInBasket(indexDish, name, amount, basketPrice) {
     return `
         <div class="choosen-dish-card">
-            <p class="font-22px-700">${amount} x ${name}</p>
-            <div class="amount-price-container">
+            <div class="choosen-dish-card-child-container">
+                <p class="font-22px-700">${amount} x ${name}</p>
+                <button onclick="deleteAllFromBasket(${indexDish})"
+                    id="#DeleteAll"
+                    class="btn-minus-plus font-24px-600">
+                    -
+                </button>
+            </div>
+            <div class="choosen-dish-card-child-container">
                 <p class="font-24px-600">
-                    <button onclick="deleteFromBasket(${indexDish})"
+                    <button onclick="deleteOneFromBasket(${indexDish})"
+                        id="#DeleteOne"
                         class="btn-minus-plus font-24px-600">
                         -
                     </button>

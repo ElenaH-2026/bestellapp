@@ -25,16 +25,25 @@ function renderBasket() {
 }
 
 function renderEmptyBasket() {
+    document.getElementById('#ShoppingCart').classList.remove("dishes-added-to-basket");
+    document.getElementById('#AmountDishes').classList.add("d-none");
     document.getElementById('#BasketAside').innerHTML = templateEmptyBasket();
     document.getElementById('#BasketDialog').innerHTML = templateEmptyBasket();
 }
 
 function renderFilledBasket() {
+    renderShoppingCartIcon();
     document.getElementById('#BasketAside').innerHTML = templateFilledBasket('Aside');
     document.getElementById('#BasketDialog').innerHTML = templateFilledBasket('Dialog');
     renderDishesInBasket('Aside');
     renderDishesInBasket('Dialog');
+}
 
+function renderShoppingCartIcon() {
+    const amountDishes = dishesInBasket.amounts.reduce((accumulator, currentValue) => accumulator + currentValue,);
+    document.getElementById('#ShoppingCart').classList.add("dishes-added-to-basket");
+    document.getElementById('#AmountDishes').classList.remove("d-none");
+    document.getElementById('#AmountDishes').innerHTML = amountDishes;
 }
 
 function renderDishesInBasket(position) {
@@ -77,7 +86,7 @@ function addToBasket(indexDish) {
     renderFilledBasket();
 }
 
-function deleteFromBasket(indexDish) {
+function deleteOneFromBasket(indexDish) {
     const i = dishesInBasket.dishes.indexOf(indexDish);
 
     if (dishesInBasket.amounts[i] == 1) {
@@ -87,6 +96,16 @@ function deleteFromBasket(indexDish) {
         dishesInBasket.amounts[i] -= 1;
     }
     
+    changeAddButton(indexDish);
+    renderBasket();
+}
+
+function deleteAllFromBasket(indexDish) {
+    const i = dishesInBasket.dishes.indexOf(indexDish);
+
+    dishesInBasket.dishes.splice(i, 1);
+    dishesInBasket.amounts.splice(i, 1);
+
     changeAddButton(indexDish);
     renderBasket();
 }
