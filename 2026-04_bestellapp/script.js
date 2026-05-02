@@ -1,5 +1,4 @@
 const dishesInBasket = {"dishes":[], "amounts":[]};
-const DIALOG_REF_BASKET = document.getElementById('#BasketDialog');
 
 function init() {
     renderAllDishContainer();
@@ -57,10 +56,20 @@ function renderDishesInBasket(position) {
         const basketPrice = (amount * allDishes[indexDish].price);
 
         subtotal += basketPrice;
-        choosenDishesRef.innerHTML += templateDishCartInBasket(indexDish, name, amount, basketPrice.toFixed(2).toString().replace(".", ",") + " €");
+        choosenDishesRef.innerHTML += templateDishCartInBasket(position, indexDish, name, amount, basketPrice.toFixed(2).toString().replace(".", ",") + " €");
+        toggleDeleteIcon(position, indexDish, amount);
     }
 
     renderMoneyCalculation(position, subtotal);
+}
+
+function toggleDeleteIcon(position, indexDish, amount) {
+    if (amount == 1) {
+        document.getElementById(`#DeleteAll${indexDish}${position}`).classList.add("d-none");
+    } else {
+        document.getElementById(`#DeleteOne${indexDish}${position}`).innerHTML = `-`;
+        document.getElementById(`#DeleteOne${indexDish}${position}`).classList.remove("btn-delete-one");
+    }
 }
 
 function renderMoneyCalculation(position, subtotal) {
@@ -110,6 +119,19 @@ function deleteAllFromBasket(indexDish) {
     renderBasket();
 }
 
+function deleteCompleteBasket() {
+    for (let indexBasket = 0; indexBasket < dishesInBasket.dishes.length; indexBasket++) {
+        const indexDish = dishesInBasket.dishes[indexBasket];
+        const addButtonRef = document.getElementById(`#ButtonAddToBasket${indexDish}`);
+        addButtonRef.innerHTML = `Add to basket`;
+        addButtonRef.classList.remove("btn-added-to-basket");
+    }
+    dishesInBasket.dishes = "";
+    dishesInBasket.amounts = "";
+    renderEmptyBasket();
+
+}
+
 function changeAddButton(indexDish) {
     const addButtonRef = document.getElementById(`#ButtonAddToBasket${indexDish}`);
     if (dishesInBasket.dishes.includes(indexDish)) {
@@ -127,4 +149,19 @@ function changeAddButton(indexDish) {
 function showBasketOverlay() {
     document.getElementById('#BasketDialog').showModal();
     renderBasket();
+}
+
+function closeBasketOverlay() {
+    document.getElementById('#BasketDialog').close();
+}
+
+function showConfirmationOverlay() {
+    deleteCompleteBasket();
+    closeBasketOverlay();
+    document.getElementById('#ConfirmationDialog').showModal();
+    document.getElementById('#ConfirmationDialog').innerHTML = templateConfirmationDialog();
+}
+
+function closeConfirmationOverlay() {
+    document.getElementById('#ConfirmationDialog').close();
 }

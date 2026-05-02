@@ -277,6 +277,35 @@ header {
   align-items: flex-end;
 }
 
+/* dialog-styling */
+
+.confirmation-dialog {
+  background-color: var(--color-second);
+  color: var(--color-light);
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  padding: 32px;
+}
+
+.confirmation-dialog::backdrop {
+  background: rgb(0 0 0 / 25%);
+}
+
+.span-confirmation-dialog {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.p-confirmation-dialog {
+  font-size: 32px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1440px){
   .category-seperator {
     display: none;
@@ -432,6 +461,14 @@ header {
   .dish-container {
     margin-left: 24px;
     margin-right: 24px;
+  }
+
+  .span-confirmation-dialog {
+    font-size: 40px;
+  }
+
+  .p-confirmation-dialog {
+    font-size: 24px;
   }
 }
 

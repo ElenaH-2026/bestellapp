@@ -12,19 +12,6 @@ a {
   cursor: pointer;
 }
 
-.footer-nav-bar-svg {
-  box-sizing: content-box;
-  fill: var(--color-white);
-  padding: 4px;
-  height: 24px;
-}
-
-.footer-nav-bar-svg:hover {
-  background-color: var(--color-white);
-  fill: var(--color-dark);
-  border-radius: 6px;
-}
-
 .dishes-added-to-basket {
   fill: var(--color-dark);
 }
@@ -54,14 +41,62 @@ a {
   box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px;
 }
 
-.btn-added-to-basket {
-  color: var(--color-dark);
-}
-
 .btn-minus-plus {
   color: var(--color-second);
   background-color: var(--color-light);
   padding: 0;
+}
+
+.btn-minus-plus:hover,
+.btn-added-to-basket {
+  color: var(--color-dark);
+}
+
+.btn-close {
+  align-self: flex-end;
+}
+
+.basket > .btn-close {
+  display: none;
+}
+
+.btn-delete-all {
+  align-self: flex-start;
+  padding-left: 16px;
+}
+
+.btn-delete-one {
+  padding-top: 8px;
+}
+
+.close-svg {
+  fill: var(--color-light);
+  height: 16px;
+}
+
+.delete-svg {
+  fill: var(--color-second);
+  height: 18px;
+}
+
+.footer-nav-bar-svg {
+  fill: var(--color-white);
+  height: 24px;
+}
+
+.close-svg,
+.delete-svg,
+.footer-nav-bar-svg {
+  box-sizing: content-box;
+  padding: 4px;
+}
+
+.close-svg:hover,
+.delete-svg:hover,
+.footer-nav-bar-svg:hover {
+  background-color: var(--color-white);
+  fill: var(--color-dark);
+  border-radius: 6px;
 }
 
 .btn-buy-now {
@@ -79,6 +114,11 @@ a {
   .btn-buy-now {
     font-size: 24px;
   } 
+}
+@media screen and (max-width: 768px){
+  .basket > .btn-close {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
