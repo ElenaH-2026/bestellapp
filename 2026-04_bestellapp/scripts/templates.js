@@ -126,22 +126,24 @@ function templateDishCartInBasket(position, indexDish, name, amount, basketPrice
 
 function templateConfirmationDialog() {
     return `
-        <button onclick="closeConfirmationOverlay()"
-            class="btn-close">
-            <svg class="close-svg"
-                ${xmlns}
-                ${viewBoxClose}>
-                <${pathClose}>
-                <title>Bestätigung schließen</title>  
-            </svg>
-        </button>
-        <img class=""
-            src="./assets/icons/confirmation.svg" 
-            alt="Bestellung bestätigt">
-        <span class="span-confirmation-dialog">
-            Order confirmed!
-        </span>
-        <p class="p-confirmation-dialog">
-            Your food is on the way!
-        </p>`
+        <div class="confirmation-overlay">
+            <button onclick="closeConfirmationOverlay()"
+                class="btn-close">
+                <svg class="close-svg"
+                    ${xmlns}
+                    ${viewBoxClose}>
+                    <${pathClose}>
+                    <title>Bestätigung schließen</title>  
+                </svg>
+            </button>
+            <img class=""
+                src="./assets/icons/confirmation.svg" 
+                alt="Bestellung bestätigt">
+            <span class="span-confirmation-dialog">
+                Order confirmed!
+            </span>
+            <p class="p-confirmation-dialog">
+                Your food is on the way!
+            </p>
+        </div>`
 }

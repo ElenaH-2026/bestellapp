@@ -126,10 +126,10 @@ function deleteCompleteBasket() {
         addButtonRef.innerHTML = `Add to basket`;
         addButtonRef.classList.remove("btn-added-to-basket");
     }
-    dishesInBasket.dishes = "";
-    dishesInBasket.amounts = "";
-    renderEmptyBasket();
 
+    dishesInBasket.dishes = [];
+    dishesInBasket.amounts = [];
+    renderEmptyBasket();
 }
 
 function changeAddButton(indexDish) {
@@ -160,6 +160,7 @@ function showConfirmationOverlay() {
     closeBasketOverlay();
     document.getElementById('#ConfirmationDialog').showModal();
     document.getElementById('#ConfirmationDialog').innerHTML = templateConfirmationDialog();
+    setTimeout(() => closeConfirmationOverlay(), 2000);
 }
 
 function closeConfirmationOverlay() {

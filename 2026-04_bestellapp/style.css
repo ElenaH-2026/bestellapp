@@ -280,20 +280,24 @@ header {
 /* dialog-styling */
 
 .confirmation-dialog {
-  background-color: var(--color-second);
-  color: var(--color-light);
+  background-color: transparent;
   justify-self: center;
   align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: none;
-  border-radius: 30px;
-  padding: 32px;
 }
 
 .confirmation-dialog::backdrop {
   background: rgb(0 0 0 / 25%);
+}
+
+.confirmation-overlay {
+  background-color: var(--color-second);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 32px;
 }
 
 .span-confirmation-dialog {
