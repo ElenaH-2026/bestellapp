@@ -97,7 +97,7 @@ Beschreibung ...
 
 ### 💾 Datenquelle / Schnittstelle
 
-Bilder --> assets/img/
+Bilder --> assets/img/ (von der Developer Akademie zur Verfügung gestellt)
 
 Gerichte-Informationen --> als Objekt in scripts\database-all-dishes.js
 
@@ -150,10 +150,6 @@ http://<deine_ip>:<live-server-port>
 │   ├───icons/
 │   ├───img/
 │           
-├───html/
-│       datenschutz.html
-│       impressum.html
-│           
 ├───scripts/
 │       templates.js
 │       database-all-dishes.js
@@ -175,8 +171,8 @@ http://<deine_ip>:<live-server-port>
 ## 📝 Lizenz
 
 > [!NOTE] 
-> Dieses Projekt ist ein reines Übungsprojekt und ist zu Lernzwecken im Zuge meiner Weiterbildung bei der [Developer Akademy](https://developerakademie.com) entstanden.
-> <br>Bilder und Icons wurden von der Developer Akademy bereit gestellt.
+> Dieses Projekt ist ein reines Übungsprojekt und ist zu Lernzwecken im Zuge meiner Weiterbildung bei der [Developer Akademie](https://developerakademie.com) entstanden.
+> <br>Bilder und Icons wurden von der Developer Akademie zur Verfügung gestellt.
 
 > [!IMPORTANT]
 > Details zur Lizenz findest du in der [LICENSE.md](https://github.com/ElenaH-2026/bestellapp?tab=License-1-ov-file).
