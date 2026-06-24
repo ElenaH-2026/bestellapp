@@ -2,7 +2,7 @@
 
 <div align="center">
         
-![Projektmanagement](https://img.shields.io/badge/Projektmanagement-Trelloboard_mit_Kanbanprozess-0055cc?style=for-the-badge)
+![agiles Projektmanagement](https://img.shields.io/badge/agiles_Projektmanagement-Trelloboard_mit_Kanbanprozess-0055cc?style=for-the-badge)
 <img width="12" />
 ![Lernprojekt](https://img.shields.io/badge/Lernprojekt-Frontend-00939b?style=for-the-badge)
 <img width="12" />
@@ -45,7 +45,7 @@ Beschreibung ...
 
 <div align="center">    
         
-📊 Projektmanagement: Trello-Board mit Kanban-Prozess  
+📊 agiles Projektmanagement: Trello-Board mit Kanban-Prozess  
         
 </div>
 
@@ -165,7 +165,18 @@ http://<deine_ip>:<live-server-port>
 
 | Feature | Zusatzinformation |
 | --- | --- |
-| 🌟 ... | *....* |
+| 📐 Figma-konformes Wireframe-Layout | *Die grundlegende Struktur und das Layout der App halten sich an die Vorgaben des Figma-Wireframes.* |
+| 🏗️ Clean Code & Modularität | *Strikte Einhaltung von camelCase, eine Begrenzung auf maximal 14 Zeilen pro Funktion sowie die Auslagerung von HTML-Templates.* |
+| 🍲 Dynamische Gerichte-Generierung | *Die angebotenen Gerichte werden komplett dynamisch über JavaScript aus einem Daten-Objekt geladen und auf der Seite gerendert.* |
+| ➕ Intuitiver Warenkorb-Zulauf | *Nutzer können Gerichte unkompliziert per Klick auf das Plus-Symbol direkt in den Warenkorb legen.* |
+| 🛒 Vollständige Warenkorb-Verwaltung | *Mengen einzelner Speisen lassen sich im Warenkorb flexibel erhöhen oder verringern sowie komplett löschen.* |
+| 🧮 Automatische Preisberechnung | *Die Gesamtsumme der Bestellung wird dynamisch kalkuliert, inklusive Zwischensumme und Lieferkosten.* |
+| 🏁 Interaktiver Bestell-Abschluss | *Ein Klick auf den Button leert den Warenkorb und gibt eine nutzerfreundliche Testbestellungs-Meldung aus (kein Standard-Alert).* |
+| 🎨 Authentisches Design | *Ein großflächiges Hero-Bild bildet den Kopfbereich, während das Restaurant-Logo stilvoll halb über dem Bild platziert ist.* |
+| 📱 Vollständig Responsive | *Die gesamte App ist für alle gängigen Bildschirmbreiten (320px bis 1440px+) optimiert.* |
+| 📌 Fixierter Desktop-Warenkorb | *Der seitliche Warenkorb verhält sich „sticky“ und scrollt mit, außer der Nutzer befindet sich ganz oben oder unten auf der Seite.* |
+| 🎯 Mobiler Warenkorb-Dialog | *Auf Mobilgeräten ist der seitliche Warenkorb ausgeblendet; ein zentrierter Button am unteren Rand öffnet ihn als Dialog.* |
+| ⚙️ Volle Mobile Funktionalität | *Der responsive Warenkorb-Dialog bietet exakt dieselben Interaktionen wie das Desktop-Pendant (Mengen ändern, löschen, bestellen).* |
 
 
 ## 📝 Lizenz
