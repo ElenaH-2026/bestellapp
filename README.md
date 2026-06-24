@@ -22,7 +22,7 @@
 <img/>
 <div align="center">
         
-Beschreibung ...
+Die BestellApp ist eine vollständig responsive Frontend-Webanwendung für das fiktive Restaurant "BurgerHouse", mit der Nutzer dynamisch generierte Gerichte intuitiv auswählen können. Herzstück des nach Clean-Code-Prinzipien entwickelten Projekts ist ein interaktiver Warenkorb, der sich nahtlos an alle Endgeräte anpasst – vom "sticky" Desktop-Menü bis hin zum funktionalen mobilen Dialogfenster. Dank automatischer Preisberechnung und einem interaktiven Bestellabschluss bietet die App eine realitätsnahe und sehr nutzerfreundliche Bedienung.
 
 </div>
         
