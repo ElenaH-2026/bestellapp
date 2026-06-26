@@ -1,4 +1,8 @@
-# ![Bestellapp Logo](/assets/icons/logo-symbol-40px.png) BestellAPP
+<div align="center">
+        
+# ![Bestellapp Logo](/assets/icons/logo-symbol-40px.png) BestellAPP ![Bestellapp Logo](/assets/icons/logo-symbol-40px.png)
+
+</div>
 
 <div align="center">
         
