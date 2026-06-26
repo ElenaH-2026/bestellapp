@@ -26,7 +26,7 @@ Die BestellApp ist eine vollständig responsive Frontend-Webanwendung für das f
 
 </div>
         
-![Screenshot des Pokédex](/assets/img/screenshot-readme.jpg)
+![Screenshot der BestellAPP](/assets/img/screenshot-readme.jpg)
 
 
 <div align="center">
